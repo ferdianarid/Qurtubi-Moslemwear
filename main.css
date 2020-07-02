@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 30px 100px;
+    background-color: #fff !important;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    margin: 0 20px;
+    color: #000 !important;
+}
+
+.nav-item:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+    animation: animate .4s ease-out;
+    -webkit-animation: animate .4s ease-out;
+}
+
+.swiper-container {
+    width: 90%;
+    height: 100%;
+}
+
+.jumbotron {
+    margin-top: 75px;
+    background-color: #fff;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /*Centerslidetextvertically*/display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.featuretitle {
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+}
+
+.featureCards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+.card {
+    width: 15rem;
+    margin: auto;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.card img {
+    width: 30%;
+    padding: 30px 0 0 30px;
+}
+.card-body h5 {
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.card-body p {
+    line-height: 28px;
+    color: rgb(121, 121, 121);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    margin-top: 20px;
+    grid-gap: 25px;
+}
+.grid-item {
+    padding: 20px;
+    height: 350px;
+    text-align: center;
+}
+
+.grid-item:nth-of-type(even) {
+    background-image: url('images/SirwalCard@2x.png');
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.grid-item:nth-of-type(odd) {
+    background-image: url('images/KurtaCard@2x.png');
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.seeproduct {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 30%;
+    border-radius:  0 0 10px 10px;
+    background-color: rgb(224, 43, 43);
+    -webkit-border-radius:  0 0 10px 10px;
+    -moz-border-radius:  0 0 10px 10px;
+    -ms-border-radius:  0 0 10px 10px;
+    -o-border-radius:  0 0 10px 10px;
+    transition: .4s ease-out;
+    -webkit-transition: .4s ease-out;
+    -moz-transition: .4s ease-out;
+    -ms-transition: .4s ease-out;
+    -o-transition: .4s ease-out;
+    /*display: none;
+    */overflow: hidden;
+}
+.seeproduct button {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.grid-item:hover .seeproduct {
+    width: 100%;
+}
+
+.seeproduct button:hover {
+    background-color: #fff;
+    color: rgb(224, 43, 43);
+    border: 2px solid #fff;
+}
+.producttitle {
+    padding: 0;
+    margin: 0;
+}
+.price {
+    font-weight: bold;
+}
+.ourproduct {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.cardproduct {
+    margin-top: 40px;
+    width: 15rem;
+}
+.productPhoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px;
+    -webkit-border-radius: 10px 10px;
+    -moz-border-radius: 10px 10px;
+    -ms-border-radius: 10px 10px;
+    -o-border-radius: 10px 10px;
+}
+.testimonial {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.carousels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: rgb(34, 34, 34);
+    margin-top: 40px;
+}
+
+.imagetesti {
+    width: 20%;
+}
+.imagetesti img {
+    width: 80%;
+    height: 80%;
+}
+.wordtesti {
+    width: 70%;
+    color: #FFF;
+}
+.wordtesti p {
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1b1b1b;
+    padding: 50px 0;
+}
+.footer h3 {
+    color: #FFF;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.footerbrand img {
+    margin-top: -12px;
+}
+p.sub {
+    font-size: 18px;
+    color: #FFF;
+}
+.feedback {
+    margin-top: 50px;
+    padding: 8px 32px;
+    border: 1px solid #FFF;
+    font-size: 20px;
+    color: #242424;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: .2s ease-out;
+}
+.desc {
+    line-height: 2em;
+}
+
+.feedback {
+    margin-top: 20px;
+    padding: 4px 53px;
+    border: 1px solid #FFF;
+    font-size: 20px;
+    color: #FFF;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: .2s ease-out;
+}
+.feedback:hover {
+    background-color: #FFF;
+    color: #242424;
+    border: 1px solid #FFF;
+}
+
+p.trade {
+    padding-top: 36px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    .nav-item {
+        text-transform: capitalize;
+    }
+    .swiper-container {
+        height: 100%;
+    }
+    .card {
+        margin-top: 30px;
+        width: 18rem;
+    }
+    .jumbotron {
+        margin-top: 120px;
+    }
+    .swiper-slide img {
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .featuretitle {
+        padding-top: 10px;
+    }
+    .featureCards {
+        margin-top: 10px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .cardproduct {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    .carousels {
+        flex-direction: column;
+    }
+    .imagetesti {
+        text-align: center;
+        width: 70%;
+        height: 70%;
+    }
+    .wordtesti p {
+        margin-top: -30px;
+        text-align: justify;
+        padding-bottom: 30px;
+    }
+    .articles {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .uptitle {
+        margin-top: 40px;
+    }
+}
+
+@keyframes animate {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}
+
+@keyframes open {
+    from {
+        width: 0%;
+    } to {
+        width: 50%;
+    }
+}
