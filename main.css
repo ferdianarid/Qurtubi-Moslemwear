@@ -122,7 +122,7 @@ body {
     text-align: center;
 }
 
-.grid-item:nth-of-type(even) {
+.grid-item {
     background-image: url('images/SirwalCard@2x.png');
     background-size: cover;
     border-radius: 10px;
@@ -131,8 +131,17 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.grid-item:nth-of-type(odd) {
+.grid-item:nth-child(1) {
     background-image: url('images/KurtaCard@2x.png');
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.grid-item:nth-child(2) {
+    background-image: url('images/JubbaCard@2x.png');
     background-size: cover;
     border-radius: 10px;
     -webkit-border-radius: 10px;
